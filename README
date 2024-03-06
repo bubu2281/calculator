@@ -1,0 +1,38 @@
+Task 1
+    -Am declarat initial mai multe variabile pentru a retine
+        -numarul de numere citite (N)
+        -vectorul in care se pastreaza numerele (nr)
+        -am initializat primul el. din vectorul nr ca 0 pentru a-l afisa in caz ca nu se citeste niciun numar
+        -vectorul in care se pastreaza operatiile(op)
+        -rezultatul operatiilor(result) , care este initializat cu primul nr din vect. de numere
+    -Dupa ce am citit toate numerele am citit N-1 operatori
+    -In cazul in care numarul de numere este 0 afisam primul element din vectorul de numere, adica 0
+    -Parcurgem tot vectorul de operatori, iar cu ajutorul unui switch in result inmultim/adunam/scadem/impartim elementul din
+vectorul de numere al carui indice este cu unu mai mare decat indicele operatorului aferent
+    -Dupa parcurgerea tuturor operatorilor, afisam result
+
+Task 2
+    -Taskul 2 are toate variabilele exact ca in task1
+    -Dupa toate citirile, parcurgem vectorul de operatori tinand cont doar de inmultiri si impartiri
+    -Cand ajungem la '*' sau '/' in vectorul de operatori, inmultim/impartim elementele din vectorul de nr cu indicii n si n+1,
+n - fiind indicele operatorului din vectorul de operatori.
+    -Rezultatul operatiei este trecut in elementul cu indicele n, iar el cu indicele n+1 este stres(toate elementele de la n+1
+ in colo sunt mutate cu o poz la stanga)
+    -De asemenea strgem si operatorul cu indicele n din vect de op. , prin aceeasi metoda
+
+        Exemplu 
+
+            nr = [1][2][3][4][5]   --->   nr = [1][6][4][5]    ---->   nr = [1][1.5][5]
+            op = [+][*][/][-][+]          op = [+][/][-][+]            op = [+][ - ][+]
+    -Dupa aceea calculam result exact ca in task1 si afisam
+
+Task 3
+    -Taskul 2 are toate var. declarate ca in task1, resp, task2
+    -Dupa toate citirile modificam vectorul de numere si de operatii in functie de '*' si '*' (exact ca in task 2)
+    -Dupa toate modificarile in functie de '*' si '/' modificam in functie de '#' (exact ca '*' si '/' in task 2, doar ca in loc sa
+inmultim/imparim elementele le facem suma la patrat )
+    -Dupa toate modificarile in fct de '#', calculam result ca in task1
+    -Afisam result
+
+
+
